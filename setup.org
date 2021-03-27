@@ -9,3 +9,9 @@ This literate configuration can be inserted into =.org= files via the =#+SETUPFI
 ** Based on [[https://github.com/fniessen/org-html-themes][readtheorg]]
 
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+** Code block background color
+
+Change the background color from white, based on the [[https://github.com/fniessen/org-html-themes#change-the-background-code-blocks][customization hint]] of readtheorg:
+
+#+HTML_HEAD: <style>pre.src{background:#fcf8ef;} </style>
