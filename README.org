@@ -1,0 +1,14 @@
+This is my setup file for exporting =.org= documents.
+
+* How to use (suggested workflow)
+
+1. Add the repository as submodule
+
+  #+begin_src bash
+
+    git submodule add git@github.com:f-dangel/org-export-setup.git
+    git submodule update --init
+
+  #+end_src
+
+2. Insert the line =#+SETUPFILE: link/to/org-export-setup/setup.org= into your document.
