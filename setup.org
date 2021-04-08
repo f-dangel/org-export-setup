@@ -15,3 +15,166 @@ This literate configuration can be inserted into =.org= files via the =#+SETUPFI
 Change the background color from white, based on the [[https://github.com/fniessen/org-html-themes#change-the-background-code-blocks][customization hint]] of readtheorg:
 
 #+HTML_HEAD: <style>pre.src{background:#fcf8ef;} </style>
+
+** Custom LaTeX macros
+
+My current solution is to create an extra =#+HTML_HEAD: ...= line for each command. There are other solutions discussed [[https://stackoverflow.com/questions/12717654/customizing-org-mode-exports][here]], which I did not get to work.
+
+*Example:* Add the line
+
+#+begin_example
+
+#+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mymacro{{\mathbf{\alpha,\beta,\gamma}}}\)</div>
+
+#+end_example
+
+#+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mymacro{{\mathbf{\alpha,\beta,\gamma}}}\)</div>
+
+to your =.org= file. Afterwards, you should be able to properly export =$\mymacro$= to html: $\mymacro$
+
+*** Vectors
+
+- Latin
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\va{{\mathbf{a}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vb{{\mathbf{b}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vc{{\mathbf{c}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vd{{\mathbf{d}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\ve{{\mathbf{e}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vf{{\mathbf{f}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vg{{\mathbf{g}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vh{{\mathbf{h}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vi{{\mathbf{i}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vj{{\mathbf{j}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vk{{\mathbf{k}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vl{{\mathbf{l}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vm{{\mathbf{m}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vn{{\mathbf{n}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vo{{\mathbf{o}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vp{{\mathbf{p}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vq{{\mathbf{q}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vr{{\mathbf{r}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vs{{\mathbf{s}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vt{{\mathbf{t}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vu{{\mathbf{u}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vv{{\mathbf{v}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vw{{\mathbf{w}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vx{{\mathbf{x}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vy{{\mathbf{y}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vz{{\mathbf{z}}}\)</div>
+
+- Greek
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vmu{{\mathbf{\mu}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vtheta{{\mathbf{\theta}}}\)</div>
+
+- Numeric
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vzero{{\mathbf{0}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vone{{\mathbf{1}}}\)</div>
+
+*** Matrices
+
+- Latin
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mA{{\mathbf{A}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mB{{\mathbf{B}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mC{{\mathbf{C}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mD{{\mathbf{D}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mE{{\mathbf{E}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mF{{\mathbf{F}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mG{{\mathbf{G}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mH{{\mathbf{H}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mI{{\mathbf{I}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mJ{{\mathbf{J}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mK{{\mathbf{K}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mL{{\mathbf{L}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mM{{\mathbf{M}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mN{{\mathbf{N}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mO{{\mathbf{O}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mP{{\mathbf{P}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mQ{{\mathbf{Q}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mR{{\mathbf{R}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mS{{\mathbf{S}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mT{{\mathbf{T}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mU{{\mathbf{U}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mV{{\mathbf{V}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mW{{\mathbf{W}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mX{{\mathbf{X}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mY{{\mathbf{Y}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mZ{{\mathbf{Z}}}\)</div>
+
+- Latin (decorated)
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mStilde{\mathbf{\tilde{\mS}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mGtilde{\mathbf{\tilde{\mG}}}\)</div>
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mGoverline{{\mathbf{\overline{G}}}}\)</div>
+
+- Greek
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mBeta{{\mathbf{\beta}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mPhi{{\mathbf{\Phi}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mLambda{{\mathbf{\Lambda}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mSigma{{\mathbf{\Sigma}}}\)</div>
+
+*** Graphs
+
+- Latin
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gA{{\mathcal{A}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gB{{\mathcal{B}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gC{{\mathcal{C}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gD{{\mathcal{D}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gE{{\mathcal{E}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gF{{\mathcal{F}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gG{{\mathcal{G}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gH{{\mathcal{H}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gI{{\mathcal{I}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gJ{{\mathcal{J}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gK{{\mathcal{K}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gL{{\mathcal{L}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gM{{\mathcal{M}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gN{{\mathcal{N}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gO{{\mathcal{O}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gP{{\mathcal{P}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gQ{{\mathcal{Q}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gR{{\mathcal{R}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gS{{\mathcal{S}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gT{{\mathcal{T}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gU{{\mathcal{U}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gV{{\mathcal{V}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gW{{\mathcal{W}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gX{{\mathcal{X}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gY{{\mathcal{Y}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\gZ{{\mathcal{Z}}}\)</div>
+
+*** Sets
+
+- Latin
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sA{{\mathbb{A}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sB{{\mathbb{B}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sC{{\mathbb{C}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sD{{\mathbb{D}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sF{{\mathbb{F}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sG{{\mathbb{G}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sH{{\mathbb{H}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sI{{\mathbb{I}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sJ{{\mathbb{J}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sK{{\mathbb{K}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sL{{\mathbb{L}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sM{{\mathbb{M}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sN{{\mathbb{N}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sO{{\mathbb{O}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sP{{\mathbb{P}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sQ{{\mathbb{Q}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sR{{\mathbb{R}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sS{{\mathbb{S}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sT{{\mathbb{T}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sU{{\mathbb{U}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sV{{\mathbb{V}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sW{{\mathbb{W}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sX{{\mathbb{X}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sY{{\mathbb{Y}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sZ{{\mathbb{Z}}}\)</div>
