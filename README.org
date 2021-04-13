@@ -11,6 +11,14 @@ This is my setup file for exporting =.org= documents.
 
   #+end_src
 
+  If you ran the above command in the past and want to update to the latest version, use
+
+   #+begin_src bash
+
+    git submodule update --remote
+
+   #+end_src
+
 2. Insert the line =#+SETUPFILE: link/to/org-export-setup/setup.org= into your document.
 
 ** LaTeX export
