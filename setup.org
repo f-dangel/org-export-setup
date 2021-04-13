@@ -178,3 +178,10 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sX{{\mathbb{X}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sY{{\mathbb{Y}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sZ{{\mathbb{Z}}}\)</div>
+
+* LaTeX export
+
+** Math macros
+
+#+LATEX_HEADER: \usepackage{goodfellow_math}
+#+LATEX_HEADER: \usepackage{custom_math}
