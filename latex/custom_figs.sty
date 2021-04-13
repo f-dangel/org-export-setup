@@ -1,0 +1,55 @@
+%%%%% CUSTOM FIGS DEFINITIONS %%%%%
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usetikzlibrary{shapes,
+  pgfplots.groupplots,
+  shadings,
+  calc,
+  arrows,
+  backgrounds,
+  colorbrewer,
+  shadows.blur}
+
+%%%%% MY DEFAULT STYLE %%%%%
+\pgfkeys{
+  /pgfplots/zmydefaultstyle/.style={
+    every axis plot/.append style={line width = 1.5pt},
+    ylabel near ticks,
+    xlabel near ticks,
+    xtick align = inside,
+    ytick align = inside,
+    label style = {font = \small},
+    tick label style = {font = \small},
+    title style = {font = \small},
+    legend style = {
+      font = \small,
+      fill opacity = 0.7,
+      text opacity = 1.0,
+    }
+  }
+}
+
+\pgfkeys{
+  /pgfplots/zmystyle/.style={
+    zmydefaultstyle,
+  }
+}
+
+\newcommand{\resetPGFzmystyle}{
+  \pgfkeys{/pgfplots/zmystyle/.style={
+      zmydefaultstyle,
+    }
+  }
+}
+
+
+%%%%% ADDITIONAL STYLES %%%%%
+\pgfkeys{/pgfplots/nolegend/.style={
+    legend style = {
+      fill opacity = 0.0,
+      text opacity = 0.0,
+      draw opacity = 0.0
+    }
+  }
+}

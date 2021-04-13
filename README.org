@@ -12,3 +12,53 @@ This is my setup file for exporting =.org= documents.
   #+end_src
 
 2. Insert the line =#+SETUPFILE: link/to/org-export-setup/setup.org= into your document.
+
+** LaTeX export
+:PROPERTIES:
+:ID:       3d73468b-8acc-4b59-84ce-2334ce1ce465
+:END:
+
+Copy the custom packages to your =texmf= folder so LaTeX can find them:
+
+#+begin_src bash
+
+  bash to_texmf.sh
+
+#+end_src
+
+This is the script:
+
+#+begin_src bash :tangle to_texmf.sh :results output
+
+  # Get script directory path: https://stackoverflow.com/a/4774063
+  SCRIPTPATH="$( cd "$(dirname "")" >/dev/null 2>&1 ; pwd -P )"
+
+  TEXHOME=$(kpsewhich -var-value=TEXMFHOME)
+  echo "1) Custom TeX directory: $TEXHOME"
+  echo ""
+  echo "2) Copy..."
+
+  PACKAGES="goodfellow_math custom_math custom_figs"
+
+  for package in $PACKAGES; do
+      package_src="$SCRIPTPATH/latex/$package.sty"
+      package_dst="$TEXHOME/tex/latex/$package"
+
+      mkdir -vp $package_dst
+      cp -v $package_src $package_dst
+  done
+
+  echo ""
+  echo "3) Update package index..."
+  texhash $TEXHOME
+
+  echo ""
+  echo "4) Verify..."
+
+  cd ~
+  for package in $PACKAGES; do
+      package_texmf=$(kpsewhich $package.sty)
+      echo "$package is in $package_texmf"
+  done
+
+#+end_src

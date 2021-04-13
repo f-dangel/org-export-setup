@@ -1,0 +1,54 @@
+%%%%% CUSTOM MATH DEFINITIONS %%%%%
+\usepackage{goodfellow_math}
+
+% triple vertical bar: https://tex.stackexchange.com/a/54392
+\newcommand{\vertiii}{\vert\kern-0.25ex\vert\kern-0.25ex\vert}
+\newcommand{\lvertiii}{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert}
+\newcommand{\rvertiii}{\right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}
+
+
+% greek vectors
+\def\vgamma{{\bm{\gamma}}}
+\def\vtheta{{\bm{\theta}}}
+\def\vepsilon{{\bm{\epsilon}}}
+
+% hatted vectors
+\def\vghat{{\bm{\hat{g}}}}
+
+% hatted matrices
+\def\mHhat{{\bm{\hat{H}}}}
+
+
+% math ops
+\newcommand{\transpose}[1]{\ensuremath{{#1^\top}}}
+
+\newcommand{\evaluateAt}[2]{\ensuremath{{\left. { #1 } \right|}_{ #2 } }}
+
+\DeclareMathOperator{\proj}{proj}
+\newcommand{\projection}[1]{\ensuremath{\proj_{ #1 }}}
+
+\newcommand{\angleOf}[2]{\ensuremath{\angle\left( { #1 }, { #2 } \right)}}
+
+\newcommand{\normOf}[1]{\ensuremath{\left\lVert { #1 } \right\rVert}}
+
+% notation
+\newcommand{\expectedRisk}{\ensuremath{\gL_P}}
+\newcommand{\empiricalRisk}{\ensuremath{\gL_\gD}}
+\newcommand{\miniBatchRisk}{\ensuremath{\gL_\gB}}
+
+\newcommand{\expectedRiskGradient}{\ensuremath{\vg_P}}
+\newcommand{\empiricalRiskGradient}{\ensuremath{\vg_\gD}}
+\newcommand{\miniBatchRiskGradient}{\ensuremath{\vg_\gB}}
+
+\newcommand{\expectedRiskHessian}{\ensuremath{\mH_P}}
+\newcommand{\empiricalRiskHessian}{\ensuremath{\mH_\gD}}
+\newcommand{\miniBatchRiskHessian}{\ensuremath{\mH_\gB}}
+
+\newcommand{\expectedRiskModel}{\ensuremath{M_P}}
+\newcommand{\empiricalRiskModel}{\ensuremath{M_\gD}}
+\newcommand{\miniBatchRiskModel}{\ensuremath{M_\gB}}
+
+\newcommand{\optimizerModel}{\ensuremath{\hat{M}}}
+\newcommand{\optimizerRiskEstimator}{\ensuremath{\hat{L}}}
+\newcommand{\optimizerRiskGradientEstimator}{\ensuremath{\vghat}}
+\newcommand{\optimizerRiskHessianEstimator}{\ensuremath{\mHhat}}
