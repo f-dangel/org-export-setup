@@ -179,6 +179,22 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sY{{\mathbb{Y}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\sZ{{\mathbb{Z}}}\)</div>
 
+*** Statistics
+
+#+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\E{{\mathbb{E}}}\)</div>
+
+*** Operators
+
+- Functions
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\argmax{{\mathop{\mathrm{arg}\,\mathrm{max}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\argmin{{\mathop{\mathrm{arg}\,\mathrm{min}}}}\)</div>
+
+- Matrices
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\Tr{{\mathop{\mathrm{Tr}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\diag{{\mathop{\mathrm{diag}}}}\)</div>
+
 * LaTeX export
 
 ** Math macros
