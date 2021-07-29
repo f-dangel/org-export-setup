@@ -73,6 +73,10 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vzero{{\mathbf{0}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vone{{\mathbf{1}}}\)</div>
 
+- Alternatives
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vell{{\mathbf{\ell}}}\)</div>
+
 *** Matrices
 
 - Latin
@@ -184,6 +188,10 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
 #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\E{{\mathbb{E}}}\)</div>
 
 *** Operators
+
+- Derivatives
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\jac{{\mathbf{\mathrm{J}}}}\)</div>
 
 - Functions
 
