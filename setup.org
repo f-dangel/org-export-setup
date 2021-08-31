@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       0fb0f4d8-a3d5-4dd7-9c98-b811ccc8b295
+:END:
 This literate configuration can be inserted into =.org= files via the =#+SETUPFILE: ...= header.
 
 * Personal information
