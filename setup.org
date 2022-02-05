@@ -11,7 +11,7 @@ This literate configuration can be inserted into =.org= files via the =#+SETUPFI
 
 ** Based on [[https://github.com/fniessen/org-html-themes][readtheorg]]
 
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: org-html-themes/org/theme-readtheorg.setup
 
 ** Code block background color
 
