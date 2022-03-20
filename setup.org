@@ -125,6 +125,37 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mLambda{{\mathbf{\Lambda}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\mSigma{{\mathbf{\Sigma}}}\)</div>
 
+*** Tensors
+
+- Latin
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tA{{\mathbf{\mathsf{A}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tB{{\mathbf{\mathsf{B}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tC{{\mathbf{\mathsf{C}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tD{{\mathbf{\mathsf{D}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tE{{\mathbf{\mathsf{E}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tF{{\mathbf{\mathsf{F}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tG{{\mathbf{\mathsf{G}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tH{{\mathbf{\mathsf{H}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tI{{\mathbf{\mathsf{I}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tJ{{\mathbf{\mathsf{J}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tK{{\mathbf{\mathsf{K}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tL{{\mathbf{\mathsf{L}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tM{{\mathbf{\mathsf{M}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tN{{\mathbf{\mathsf{N}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tO{{\mathbf{\mathsf{O}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tP{{\mathbf{\mathsf{P}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tQ{{\mathbf{\mathsf{Q}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tR{{\mathbf{\mathsf{R}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tS{{\mathbf{\mathsf{S}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tT{{\mathbf{\mathsf{T}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tU{{\mathbf{\mathsf{U}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tV{{\mathbf{\mathsf{V}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tW{{\mathbf{\mathsf{W}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tX{{\mathbf{\mathsf{X}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tY{{\mathbf{\mathsf{Y}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tZ{{\mathbf{\mathsf{Z}}}}\)</div>
+
 *** Graphs
 
 - Latin
