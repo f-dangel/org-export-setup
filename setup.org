@@ -237,6 +237,7 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\Tr{{\mathop{\mathrm{Tr}}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\diag{{\mathop{\mathrm{diag}}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vec{{\mathop{\mathrm{vec}}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\Kern{{\mathop{\mathrm{Kern}}}}\)</div>
 
 * LaTeX export
 
@@ -244,3 +245,9 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
 
 #+LATEX_HEADER: \usepackage{goodfellow_math}
 #+LATEX_HEADER: \usepackage{custom_math}
+
+*** Operators
+
+- Vector and matrix functions
+
+  #+LATEX_HEADER: \def\Kern{{\mathop{\mathrm{Kern}}}}
