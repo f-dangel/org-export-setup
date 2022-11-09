@@ -69,6 +69,7 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
 - Greek
 
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vmu{{\mathbf{\mu}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vsigma{{\mathbf{\sigma}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vtheta{{\mathbf{\theta}}}\)</div>
 
 - Numeric
@@ -246,8 +247,15 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
 #+LATEX_HEADER: \usepackage{goodfellow_math}
 #+LATEX_HEADER: \usepackage{custom_math}
 
+*** Vectors
+
+- Greek
+
+  #+LATEX_HEADER: \def\vsigma{{\bm{\sigma}}}
+
 *** Operators
 
 - Vector and matrix functions
 
   #+LATEX_HEADER: \def\Kern{{\mathop{\mathrm{Kern}}}}
+
