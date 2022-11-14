@@ -240,12 +240,18 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vec{{\mathop{\mathrm{vec}}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\Kern{{\mathop{\mathrm{Kern}}}}\)</div>
 
+- Paired delimiters
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\llbracket{⟦}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\rrbracket{⟧}\)</div>
+
 * LaTeX export
 
 ** Math macros
 
 #+LATEX_HEADER: \usepackage{goodfellow_math}
 #+LATEX_HEADER: \usepackage{custom_math}
+#+LATEX_HEADER: \usepackage{stmaryrd}
 
 *** Vectors
 
