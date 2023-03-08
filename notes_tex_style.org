@@ -1,0 +1,11 @@
+#+LATEX_HEADER_EXTRA: \usepackage{times}
+#+LATEX_HEADER_EXTRA: \usepackage{nopageno}
+#+LATEX_HEADER_EXTRA: \usepackage{xcolor}
+#+LATEX_HEADER_EXTRA: \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+#+LATEX_HEADER_EXTRA: \definecolor{RTDBlue}{HTML}{2980b9}
+#+LATEX_HEADER_EXTRA: \usepackage{hyperref}
+#+LATEX_HEADER_EXTRA: \hypersetup{colorlinks = true, allcolors=RTDBlue}
+#+LATEX_HEADER_EXTRA: \setlength{\parindent}{0pt}
+#+LATEX_HEADER_EXTRA: \renewcommand{\labelitemi}{\color{RTDBlue}$\bullet$}
+#+LATEX_HEADER_EXTRA: \usepackage{sectsty} \allsectionsfont{\color{RTDBlue}}
