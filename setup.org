@@ -69,6 +69,7 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
 - Greek
 
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vmu{{\mathbf{\mu}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vpsi{{\mathbf{\psi}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vsigma{{\mathbf{\sigma}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\vtheta{{\mathbf{\theta}}}\)</div>
 
@@ -257,6 +258,7 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
 
 - Greek
 
+  #+LATEX_HEADER: \def\vpsi{{\bm{\psi}}}
   #+LATEX_HEADER: \def\vsigma{{\bm{\sigma}}}
 
 *** Operators
