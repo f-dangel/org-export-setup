@@ -159,6 +159,37 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tY{{\mathbf{\mathsf{Y}}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tZ{{\mathbf{\mathsf{Z}}}}\)</div>
 
+*** Tensor elements
+
+- Latin
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etA{{\mathsf{A}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etB{{\mathsf{B}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etC{{\mathsf{C}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etD{{\mathsf{D}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etE{{\mathsf{E}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etF{{\mathsf{F}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etG{{\mathsf{G}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etH{{\mathsf{H}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etI{{\mathsf{I}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etJ{{\mathsf{J}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etK{{\mathsf{K}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etL{{\mathsf{L}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etM{{\mathsf{M}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etN{{\mathsf{N}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etO{{\mathsf{O}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etP{{\mathsf{P}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etQ{{\mathsf{Q}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etR{{\mathsf{R}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etS{{\mathsf{S}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etT{{\mathsf{T}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etU{{\mathsf{U}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etV{{\mathsf{V}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etW{{\mathsf{W}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etX{{\mathsf{X}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etY{{\mathsf{Y}}}\)</div>
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etZ{{\mathsf{Z}}}\)</div>
+
 *** Graphs
 
 - Latin
