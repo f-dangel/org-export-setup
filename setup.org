@@ -159,6 +159,10 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tY{{\mathbf{\mathsf{Y}}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tZ{{\mathbf{\mathsf{Z}}}}\)</div>
 
+- Greek
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\tPi{{\mathbf{\mathsf{\Pi}}}}\)</div>
+
 *** Tensor elements
 
 - Latin
@@ -189,6 +193,10 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etX{{\mathsf{X}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etY{{\mathsf{Y}}}\)</div>
   #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etZ{{\mathsf{Z}}}\)</div>
+
+- Greek
+
+  #+HTML_HEAD_EXTRA: <div style="display: none;">\(\def\etPi{{\mathsf{\Pi}}}\)</div>
 
 *** Graphs
 
@@ -293,6 +301,18 @@ to your =.org= file. Afterwards, you should be able to properly export =$\mymacr
   #+LATEX_HEADER: \def\vlambda{{\bm{\lambda}}}
   #+LATEX_HEADER: \def\vpsi{{\bm{\psi}}}
   #+LATEX_HEADER: \def\vsigma{{\bm{\sigma}}}
+
+*** Tensors
+
+- Greek
+
+  #+LATEX_HEADER: \def\tPi{{\bm{\mathsf{\Pi}}}}
+
+*** Tensor elements
+
+- Greek
+
+  #+LATEX_HEADER: \def\etPi{{\mathsf{\Pi}}}
 
 *** Operators
 
